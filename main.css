@@ -108,3 +108,7 @@ body {
         transform: scale(1);
     }
 }
+
+@theme {
+    --breakpoint-xs: 450px;
+}
