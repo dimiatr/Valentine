@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body>
+    <div class=" flex items-center justify-center p-5 min-h-screen py-44">
+        <div class="bg-white/40 backdrop-blur-2xl p-4 rounded-2xl  max-w-[430px] w-full min-h-[300px]">
+            <div class="relative">
+                <img class="mx-auto w-[250px]" src="img/valen.png" alt="">
+                <div class="absolute left-20 top-0">
+                    <div class="snow-globe " id="snowGlobe">
+                        <div class="snow-base"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="bg-white p-2 text-purple-500 rounded text-lg font-semibold  text-nowrap overflow-hidden w-max mx-auto my-5">
+                <span class="writing" id="writing-text"></span>
+            </p>
+            <div class="rounded-2xl overflow-hidden border-4 border-red-700 relative">
+                <img src="img/lu.png" alt="">
+                <img id="heart" class="absolute left-24 top-14 w-28 transition-all duration-300 ease-linear hover:scale-125" src="img/hearthU.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
