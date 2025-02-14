@@ -5,7 +5,7 @@ body {
     padding: 0;
     height: 100vh;
     background: radial-gradient(ellipse at bottom, #000 0%, #020202 100%);
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 

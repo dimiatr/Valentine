@@ -23,16 +23,30 @@ function createSnowflake() {
 
 setInterval(createSnowflake, 200);
 
-const text = `Полиночка, с 14 февраля тебя !<3`; 
-let i = 0;
-const writingElement = document.getElementById('writing-text');
+const textOne = `Полиночка, с 14 февраля тебя! ❤️`; 
+const textTwo = `И мы в тебя влюблены тоже! 💜`; 
 
-function typeWriter() {
-    if (i < text.length) {
-        writingElement.innerHTML += text.charAt(i);
+const writingElementOne = document.getElementById('writing-text-one');
+const writingElementTwo = document.getElementById('writing-text-two');
+
+let i = 0;
+let j = 0;
+
+function typeWriterOne() {
+    if (i < textOne.length) {
+        writingElementOne.innerHTML += textOne.charAt(i);
         i++;
-        setTimeout(typeWriter, 150); // Задержка между буквами
+        setTimeout(typeWriterOne, 150);
+    } 
+}
+
+function typeWriterTwo() {
+    if (j < textTwo.length) {
+        writingElementTwo.innerHTML += textTwo.charAt(j);
+        j++;
+        setTimeout(typeWriterTwo, 150);
     }
 }
 
-typeWriter();
+typeWriterOne();
+typeWriterTwo();
